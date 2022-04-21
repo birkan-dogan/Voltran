@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: red;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    border: 10px solid white;
+    border-radius: 55px;
+    width: 1000px;
+    margin: auto;
+}
+header h1:hover{
+    color: black;
+    border-color: black;
+    transition: 0.3s;
+    cursor: crosshair;
+}
+
+
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+.main-nav ul{
+    display: inline-flex;
+    padding: 25px, 100px;
+    padding:1px 50px;
+    list-style-type: none;
+}
+.main-nav ul li{
+    padding-left: 180px;
+    font-size: 30px;
+    text-align: center;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.main-nav ul li a:hover{
+    color:green;
+    background-color: pink;
+    padding: 5px;
+}
+main{
+    text-align: center;
+    margin: 50px 120px;
+    padding: 30px;
+}
+main article h2{
+    color: red;
+    font-size: 50px;
+}
+main article p{
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+main ul li{
+    display: inline-flex;
+    padding: 15px 10px;
+    list-style-type: none;
+}
+main ul li:hover{
+    width: 55px;
+    transition: 0.5s;
+}
+
+.club{
+    background-color: rgba(255,255,150,0.5);
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+.join{
+    text-align: center;
+}
+
+.join form input{
+    margin: 50px 5px;
+    padding: 10px 70px;
+    border-radius: 50px;
+}
+.join form #submit{
+    border: 5px solid green;
+}
+.join form #submit:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+footer{
+    background-color: red;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width: 1400px){
+    .banner .welcome{
+      font-size: 40px;
+    }
+  }
+@media screen and (max-width: 960px){
+    .banner .welcome{
+      font-size: 28px;
+    }
+    nav li{
+      font-size: 18px;
+    }
+  }
+@media screen and (max-width: 700px){
+    .banner .welcome{
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome span{
+      font-size: 1em;
+    }
+    nav li{
+      font-size: 18px;
+    }
+    .images li{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    }
+  }
+@media screen and (max-width: 560px){
+    .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    }
+    .banner .welcome br{
+    display: none;
+    }
+    .banner .welcome span{
+    font-size: 1em;
+    }
+    nav li{
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    }
+    article h2{
+      font-size: 36px;
+    }
+    header, nav{
+    position: relative;
+    top: 0;
+    }
+  }
